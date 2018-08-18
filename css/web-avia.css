@@ -1,0 +1,42 @@
+.left-image{
+background-image: url("../img/coffee.png");
+background-repeat: no-repeat;
+background-position: right;
+height: 415px;∫
+}
+.first-section{
+  padding-left: 82px;
+}
+
+.content_wraper{
+  height: 100%;
+  display: table;
+}
+.content_body{
+  display: table-cell;
+  vertical-align: middle;
+}
+.right-content{
+  height: 415px;
+padding-left: 96px;
+}
+.web-avia-button{
+    width: 150px;
+    background-color: #4a4f55;
+    color: #FFF;
+    border: 0;
+    text-transform: uppercase;
+    font-family: inherit;
+    height: 50px;
+    margin-top: 29px;
+}
+.titulo{
+  padding-bottom: 45px;
+}
+.detalle{
+  padding-bottom: 31px;
+}
+.description{
+  margin-top: 29px;
+  padding-bottom: 29px;
+}

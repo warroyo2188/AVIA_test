@@ -1,0 +1,143 @@
+.page-section {
+    height: auto;
+    margin-top: 15px;
+}
+
+.big-image,
+.first-section .big-image {
+  width: 100%;
+  height: auto;
+  background-color: #ebebeb;
+}
+
+
+.title-section {
+    margin-top: 0;
+    padding: 50px 15px;
+}
+
+.title-section .title-section__title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.news-section__row {
+    display: table;
+    width: 100%
+}
+
+.news-section__column {
+    display: table-cell;
+    float: inherit; 
+    padding-left: 0;
+    padding-right: 0;
+    vertical-align: top;
+}
+
+.news-section__sidebar-container{
+    padding-left: 35px;
+}
+.news-row {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 2rem; /* Chrome, Safari, Opera */
+    -moz-column-gap: 2rem; /* Firefox */
+    column-gap: 2rem;
+
+}
+.news-section__card {
+    width: calc(100% / 1);
+    padding-bottom: 35px;
+}
+
+.news-section__card .card__body{
+    margin: 10px 0;
+}
+.news-section__card .card__title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.news-section__sidebar {
+    background-color: #ebebeb;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+}
+
+.news-section__sidebar h2 {
+    text-align: center;
+
+    font-size: 1.25em;
+    -webkit-margin-before: 1.5em;
+    -webkit-margin-after: 1.5em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.news-section__sidebar h3 {
+    display: block;
+    font-size: 1em;
+    -webkit-margin-before: 0.25em;
+    -webkit-margin-after: 0.25em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.news-section__sidebar h4 {
+    display: block;
+    font-size: 0.85em;
+    -webkit-margin-before: 0.25em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.news-section__sidebar p {
+    display: block;
+    font-size: 0.85em;
+    -webkit-margin-before: 0.25em;
+    -webkit-margin-after: 2em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    text-align: justify;
+}
+
+.third-section {
+    height: auto;
+    min-height: auto;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    .title-section {
+        margin: 0;
+        padding: 75px 15px;
+    }
+    .page-section{
+        height: auto;
+        margin: 35px 50px;
+    }
+
+    .first-section{
+    margin-top: 0;
+    }
+
+}
+@media (min-width: 992px) {
+    .title-section {
+        margin: 0;
+        padding: 100px 30px;
+    }
+    
+}
+

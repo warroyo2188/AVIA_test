@@ -1,0 +1,17 @@
+/*
+Theme Name: AVIA
+Author: OVA Team | @bamacaerick for custom design | Bryan Hadaway for core base
+Description: A fully responsive generic, custom ready based on design deliver by client and sass build with gulp task manager.
+Version: 0.1
+Tags: one-column, two-columns, right-sidebar, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready, blog, e-commerce, portfolio
+*/
+
+@import 'config';
+@import 'normalize';
+@import 'wpeditor';
+@import 'swiper';
+@import 'mixins';
+@import 'grid/grid';
+@import 'parts/index';
+
+

@@ -1,0 +1,123 @@
+.slider {
+    position: relative;
+    height: 350px;
+    margin-top: -40px;
+    z-index: 9;
+
+    @media (min-width: $screen-md-min) { 
+      margin-top: -80px;
+      height: 500px;
+    }
+
+    @media (min-width: $screen-lg-min) { 
+      height: 600px;
+    }
+
+    &__title {
+      @include font-size(20);
+      margin-bottom: 2rem;
+      font-weight: 700;
+
+      @media (min-width: $screen-md-min) { 
+        @include font-size(28);
+      }
+
+      @media (min-width: $screen-lg-min) {
+        @include font-size(32);
+      }
+    }
+
+    &__text {
+      background-color: #cccccc;
+      color: #4d5258;
+      padding: 8% 17%;
+      height: 350px;
+      text-align: left;
+
+      p {
+        @include font-size(16);
+        margin-bottom: 1rem;
+      }
+    
+      @media (min-width: $screen-md-min) { 
+        height: 500px;
+        
+        p {
+          @include font-size(18);
+          line-height: 130%;
+        }
+
+      }
+  
+      @media (min-width: $screen-lg-min) { 
+        height: 600px;
+      }
+    }
+
+    &__image {
+      border: 1px solid #979797;
+      display: none;
+      left: calc(-26% - 30px);
+      max-width: 600px;
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &:before {
+        content: "";
+        background-color: #979797;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        top: -30px;
+        width: 115%;
+      }
+
+      @media (min-width: $screen-md-min) { 
+        display: block;
+      }
+      
+      &-content {
+        position: relative;
+        img {
+          position: relative;
+          top: 30px;
+          left: 30px;
+          width: 100%;
+        }
+      }
+    }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-button-next, 
+.swiper-container-rtl .swiper-button-prev {
+  background-image: url('#{$img-assets}/next-arrow.png');
+}
+
+.swiper-button-prev, 
+.swiper-container-rtl .swiper-button-next {
+  background-image: url('#{$img-assets}/prev-arrow.png');
+}

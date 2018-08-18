@@ -1,0 +1,53 @@
+#contenedor{
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/* imagen debajo de menu */
+
+.banner{
+  background-image: url("../img/banner-nightlife.png");
+  background-repeat: no-repeat;
+  background-color:#ebebeb;
+}
+.banner-2{
+  background-image: url("../img/banner-nightlife-2.png");
+  width: 606px;
+  height: 439px;
+  position: absolute;
+  margin-left: 70%
+}
+
+.first-section {
+  margin: 0 25px;
+}
+
+.first-section .cover-text {
+  left: 0;
+  border: 0;
+}
+  /* external css: flickity.css */
+  /* carousel */
+body { font-family:  Gill sans;}
+
+
+.container{
+  background-color: #ebebeb;
+  height: 405px;
+  margin-top: 50px;
+  color: #3a3c43;
+}
+.column {
+  background-image: url("../img/img_nightlife_1.png");
+  background-color: red;
+  width: 193px;
+  height: 193px;
+  margin-left: 6%;
+  text-align: center;
+  padding-top: 195px;
+}
+.title{
+margin-left: 55px;
+margin-top: 40px;
+margin-bottom: 30px;
+}

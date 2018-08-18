@@ -1,0 +1,122 @@
+header {
+  height: 80px;
+  background-color: #FDFDFD;
+  border-bottom: 1px solid #999;
+  
+  @media (min-width: $screen-sm-min) {
+    height: 100px;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+
+  & + .main-content {
+    padding-top: 80px;
+  }
+}
+.header {
+
+  &__branding {
+    width: 150px;
+    height: 80px;
+    margin-left: 0;
+    
+    @media (min-width: $screen-sm-min) {
+      margin-left: 3%;
+    }
+    
+    a {
+      background: transparent url('#{$img-assets}/logo.png') no-repeat center;
+      background-size: contain;
+      display: block;
+      overflow: hidden;
+      width: 100px;
+      height: 80px;
+
+      @media (min-width: $screen-sm-min) {
+        width: 150px;
+      }
+
+      span {
+        display: block;
+        padding-top: 100px;
+      }
+    }
+  }
+
+  .menu {
+    float: right;
+    overflow: hidden;
+
+    .qtranxs-lang-menu > a{
+      display: none;
+    }
+
+    li {
+      float: right;
+    }
+  }
+
+  .sub-menu {
+    overflow: hidden;
+    margin-right: 10px;
+
+    img {
+      display: none;
+    }
+
+    li {
+      line-height: 80px;
+
+      a {
+        color: #999;
+        text-transform: uppercase;
+      }
+
+      &:last-child a {
+        border-right: 1px solid #999;
+        margin-right: 5px;
+        padding-right: 8px;
+      }
+    }
+
+    
+  }
+
+  &__contact {
+    height: 80px;
+    background-color: #999;
+    color: #FFF;
+    text-transform: uppercase;
+    float: right;
+    width: 110px;
+    text-align: center;
+    line-height: 80px;
+    a {
+      color: #FFF;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &__branding,
+    &__branding a,
+    &__contact,
+    .sub-menu li {
+      height: 100px;
+      line-height: 100px;
+    }
+
+    .sub-menu {
+      margin-right: 30px;
+    }
+
+    &__contact {
+      line-height: 100px;
+      width: 150px;
+    }
+  }
+}
