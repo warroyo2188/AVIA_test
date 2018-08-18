@@ -1,12 +1,4 @@
-/* estilo de logotipo */
 
-.logo{
-  background-image: url("../img/logo.png");
-  background-repeat: no-repeat;
-   height:50px;
-   margin-top: 2%;
-   margin-right: 7px;
-}
 /* estilo de menu */
 .scrollmenu {
   display: table;
@@ -30,7 +22,7 @@
 
 .footer__copyright {
   background-color: transparent;
-  background-image: url("../img/logo-white.png");
+  background-image: url("../images/logo-white.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -72,7 +64,7 @@
   margin-bottom: 12px;
 }
 .footer_column_content .content_facebook{
-  background-image:url("../img/facebook.png");
+  background-image:url("../images/facebook.png");
   background-repeat: no-repeat;
   float: right;
   width: 18px;
@@ -82,7 +74,7 @@
 }
 
 .footer_column_content .content_instagram{
-  background-image:url("../img/instagram.png");
+  background-image:url("../images/instagram.png");
   background-repeat: no-repeat;
   float: right;
   width: 18px;
@@ -99,4 +91,5 @@
 .footer_column_content a {
   display: block;
   margin: 15px 0;
+  color: white;
 }

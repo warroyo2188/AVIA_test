@@ -135,56 +135,9 @@ padding-left: 96px;
 
     }
 }
-/* external css: flickity.css */
-/* carousel */
-* {
--webkit-box-sizing: border-box;
-box-sizing: border-box;
-}
 
-body { font-family:  Gill sans;}
 
 .gallery {
 background: #d8d8d8;
 height: 400px;
-
-}
-.column{
-  margin-top: 10px;
-  width: 30%;
-}
-
-.gallery-cell {
-width: 250px;
-height: 250px;
-margin-right: 20px;
-margin-left: 20px;
-background: #8C8;
-counter-increment: gallery-cell;
-}
-
-/* cell number */
-.gallery-cell:before {
-display: block;
-text-align: center;
-content: counter(gallery-cell);
-line-height: 200px;
-font-size: 80px;
-color: white;
-}
-
-.img{
-text-align: center;
-
-}
-.flickity-prev-next-button.previous {
-    left: 700px;
-}
-.flickity-enabled {
-    padding-top: 50px;
-    position: absolute;
-}
-/* pie pagina */
-.link{
-  color: white;
 }

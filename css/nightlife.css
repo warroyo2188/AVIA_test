@@ -6,12 +6,12 @@
 /* imagen debajo de menu */
 
 .banner{
-  background-image: url("../img/banner-nightlife.png");
+  background-image: url("../images/banner-nightlife.png");
   background-repeat: no-repeat;
   background-color:#ebebeb;
 }
 .banner-2{
-  background-image: url("../img/banner-nightlife-2.png");
+  background-image: url("../images/banner-nightlife-2.png");
   width: 606px;
   height: 439px;
   position: absolute;
@@ -38,7 +38,7 @@ body { font-family:  Gill sans;}
   color: #3a3c43;
 }
 .column {
-  background-image: url("../img/img_nightlife_1.png");
+  background-image: url("../images/img_nightlife_1.png");
   background-color: red;
   width: 193px;
   height: 193px;
