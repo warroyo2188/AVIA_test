@@ -2,10 +2,12 @@
 <html>
 
 <head>
+    <link href="lib/avia/swiper/swiper.min.css" rel="stylesheet" type="text/css">
     <link href="lib/avia/style-reset.css" rel="stylesheet">
+    <link href="lib/avia/normalize.css" rel="stylesheet">
     <link href="lib/avia/style.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/financiero-1.css" rel="stylesheet">
+    <link href="css/lounges.css" rel="stylesheet">
 </head>
 
 <body>
@@ -62,23 +64,36 @@
                         <div class="col-xs-12 second-section__title">
                             <h2>DIRECTORIO</h2>
                         </div>
-                        <div class="col-xs-3 card">
-                            <img class="card__image" src="images/nightlife-1.png" alt="">
-                            <p class="card__title">SYU</p>
+                        <div class="col-xs-12">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="col-xs-12 card">
+                                            <img class="card__image" src="images/nightlife-1.png" alt="">
+                                            <p class="card__title">SYU</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col-xs-12 card">
+                                            <img class="card__image" src="images/nightlife-2.png" alt="">
+                                            <p class="card__title">SUGAR</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col-xs-12 card">
+                                            <img class="card__image" src="images/nightlife-3.png" alt="">
+                                            <p class="card__title">BAR ZEIS</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col-xs-12 card">
+                                            <img class="card__image" src="images/nightlife-4.png" alt="">
+                                            <p class="card__title">ZIELO ROOFTOP</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xs-3 card">
-                            <img class="card__image" src="images/nightlife-2.png" alt="">
-                            <p class="card__title">SUGAR</p>
-                        </div>
-                        <div class="col-xs-3 card">
-                            <img class="card__image" src="images/nightlife-3.png" alt="">
-                            <p class="card__title">BAR ZEIS</p>
-                        </div>
-                        <div class="col-xs-3 card">
-                            <img class="card__image" src="images/nightlife-4.png" alt="">
-                            <p class="card__title">ZIELO ROOFTOP</p>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -168,7 +183,14 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="lib/carousel/flickity.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/avia/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="js/general.js"></script>
+    <script>
+        $(document).ready(function () {
+            setSwiper(4);
+        })
+    </script>
 </body>
 
 </html>

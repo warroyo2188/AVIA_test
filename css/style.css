@@ -93,3 +93,9 @@
   margin: 15px 0;
   color: white;
 }
+
+.swiper-slide .card .card__title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
