@@ -2,8 +2,9 @@
 <html>
 
 <head>
-    <link href="lib/carousel/flickity.css" rel="stylesheet" type="text/css">
+    <link href="lib/avia/swiper/swiper.min.css" rel="stylesheet" type="text/css">
     <link href="lib/avia/style-reset.css" rel="stylesheet">
+    <link href="lib/avia/normalize.css" rel="stylesheet">
     <link href="lib/avia/style.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/gastronomia.css" rel="stylesheet">
@@ -62,29 +63,33 @@
             <div class="first-section__wrapper">
                 <div class="col-xs-12 col-sm-12 gallery ">
                     <h2 class="col-xs-12 col-sm-12 first-section__content-title text-center">Directorio</h2>
-                    <div class="col-xs-12 col-sm-12 js-flickity">
-                        <div class="img">
-                            <img class="gallery-cell" src="./images/bac.png" />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>BAC CREDOMATIC</h5>
-                            </div>
-                        </div>
-                        <div class="img">
-                            <img class="gallery-cell" src="./images/industrial.png" />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>BANCO INDUSTRIAL</h5>
-                            </div>
-                        </div>
-                        <div class="img">
-                            <img class="gallery-cell" src="./images/g&t.png" />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>BANCO G&T CONTINENTAL</h5>
-                            </div>
-                        </div>
-                        <div class="img">
-                            <img class="gallery-cell" src="./images/promerica.png" />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>BANCO PROMERICA</h5>
+                    <div class="col-xs-12">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="col-xs-12 card">
+                                        <img class="card__image" src="images/nightlife-1.png" alt="">
+                                        <p class="card__title">SYU</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="col-xs-12 card">
+                                        <img class="card__image" src="images/nightlife-2.png" alt="">
+                                        <p class="card__title">SUGAR</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="col-xs-12 card">
+                                        <img class="card__image" src="images/nightlife-3.png" alt="">
+                                        <p class="card__title">BAR ZEIS</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="col-xs-12 card">
+                                        <img class="card__image" src="images/nightlife-4.png" alt="">
+                                        <p class="card__title">ZIELO ROOFTOP</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -92,20 +97,26 @@
             </div>
         </section>
 
-        <!--third section-->
-        <section class="third-section">
+        <section class="page-section title-section">
+            <div class="row ">
+                <div class="col-xs-12 ">
+                    <h2 class="title-section__title">LA TERRAZA</h2>
+                </div>
+            </div>
+        </section>
+        <!--picture-right section-->
+        <section class="picture-right-section">
             <div class="section-row">
-                <div class="third-section__column-left">
-                    <div class="third-section__left row">
+                <div class="picture-right-section__column-left">
+                    <div class="picture-right-section__left row">
                         <div class="col-xs-4 col-xs-push-4 ">
                             <h2 class="second-section__title">MUY PRONTO</h2>
-                            <p class="first-section__content-text">Descubre un nuevo pasaje culinario y vive la experiencia
-                                AVIA en un ambiente unico en Guatemala.</p>
+                            <p class="first-section__content-text">Descubre un nuevo pasaje culinario y vive la experiencia AVIA en un ambiente unico en Guatemala.</p>
                         </div>
 
                     </div>
                 </div>
-                <div class="third-section__column-right">
+                <div class="picture-right-section__column-right">
                     <img class="big-image" src="images/gastronomia/1.png" alt="">
                 </div>
             </div>
@@ -138,8 +149,8 @@
                     <div class="fourth-section__right row">
                         <div class="col-xs-6 col-xs-push-3 ">
                             <h2 class="second-section__title">MERCADO AVIA</h2>
-                            <p class="first-section__content-text">Disfruta una fusion de sabores en un solo ambiente. Te
-                                esperamos muy pronto en la terraza de AVIA.</p>
+                            <p class="first-section__content-text">Disfruta una fusion de sabores en un solo ambiente. Te esperamos muy pronto en la terraza de
+                                AVIA.</p>
                         </div>
                     </div>
                 </div>
@@ -203,7 +214,14 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="lib/carousel/flickity.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/avia/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="js/general.js"></script>
+    <script>
+        $(document).ready(function () {
+            setSwiper(4);
+        })
+    </script>
 </body>
 
 </html>
