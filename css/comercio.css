@@ -1,35 +1,35 @@
-#contenedor{
+#contenedor {
   margin-right: 50px;
   margin-left: 50px;
 }
 
 /* imagen debajo de menu */
 
-.banner{
-  background-image: url("../img/banner-bg.png");
-}
-
-.first-section {
-  margin: 0 25px;
+.banner {
+  background-image: url("../images/banner-bg.png");
 }
 
 .first-section .cover-text {
   left: 0;
   border: 0;
 }
-  /* external css: flickity.css */
-  /* carousel */
+
+/* external css: flickity.css */
+
+/* carousel */
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-body { font-family:  Gill sans;}
+body {
+  font-family: Gill sans;
+}
 
 .gallery {
   background: #d8d8d8;
   height: 375px;
-
 }
 
 .gallery-cell {
@@ -42,6 +42,7 @@ body { font-family:  Gill sans;}
 }
 
 /* cell number */
+
 .gallery-cell:before {
   display: block;
   text-align: center;
@@ -51,12 +52,14 @@ body { font-family:  Gill sans;}
   color: white;
 }
 
-.img{
-text-align: center;
+.img {
+  text-align: center;
 }
-.information{
+
+.information {
   color: red;
 }
+
 .direction_1 {
   background: #d8d8d8;
   height: 375px;
@@ -69,24 +72,33 @@ text-align: center;
   margin-top: 50px;
   text-align: center;
 }
+
 .direction_2 {
-  background-image: url("../img/coffee.png");
+  background-image: url("../images/coffee.png");
   background-repeat: no-repeat;
   height: 375px;
   width: 40%;
   margin-top: 50px;
 }
+
 .direction_3 {
-  background-image: url("../img/coffee.png");
+  background-image: url("../images/coffee.png");
   background-repeat: no-repeat;
   height: 375px;
   width: 25%;
   margin-top: 50px;
 }
+
 .direction_4 {
-  background-image: url("../img/proximamente.png");
+  background-image: url("../images/proximamente.png");
   background-repeat: no-repeat;
   height: 375px;
   width: 75%;
   margin-top: 50px;
+}
+
+@media (min-width: 1200px) {
+  .first-section .cover-text {
+    transform: initial;
+  }
 }

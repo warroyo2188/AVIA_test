@@ -28,6 +28,7 @@
     top: 0;
     bottom: initial;
     left: 15px;
+    border: 0;
 }
 .big-image,
 .first-section .big-image {
